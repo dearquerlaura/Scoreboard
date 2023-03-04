@@ -1,0 +1,96 @@
+/* GENERAL_________________________________________________ */
+
+:root {
+  --myYellow: rgb(255, 255, 59);
+  --myBlue: #0000ff;
+}
+
+@font-face {
+  src: url(../fonts/score_board/scoreboard.ttf);
+  font-family: scoreTypo;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  height: 100%;
+  color: var(--myYellow);
+  font-family: "Noto Sans Mono", monospace;
+}
+
+/* SIMPLE STYLES_________________________________________________ */
+
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/* BUTTONS_________________________________________________ */
+
+button {
+  color: var(--myYellow);
+  background-color: rgba(173, 173, 173, 0.362);
+  border: 2px solid var(--myYellow);
+  border-radius: 5px;
+  padding: 3% 8%;
+  font-size: 14px;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+button:hover {
+  background-color: var(--myYellow);
+  color: blue;
+}
+
+/* CONTAINERS_________________________________________________ */
+
+.extracontainer {
+  text-align: center;
+  margin: 7%;
+}
+
+.container {
+  margin: 7% auto;
+  max-width: 800px;
+  padding: 3% 7% 5% 7%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid var(--myYellow);
+  border-radius: 5px;
+}
+
+.homeContainer {
+  width: 35%;
+}
+
+.guestContainer {
+  width: 35%;
+}
+
+.scoreContainer {
+  font-family: scoreTypo;
+  color: var(--myBlue);
+  background-color: rgba(255, 255, 99, 0.53);
+  font-size: 80px;
+  border: 5px double var(--myBlue);
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  column-gap: 1%;
+  /* align-items: center; */
+}
+
+.highlight {
+  border: 5px double var(--myYellow);
+  background-color: rgba(255, 255, 99, 0.653);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board - Laura de Arquer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="extracontainer">
+
+
+        <div class="container">
+
+
+
+
+            <div class="homeContainer">
+
+                <h2>HOME</h2>
+
+                <div id="scoreHomeContainer" class="scoreContainer">
+                    <p id="homeScore">00</p>
+                </div>
+
+                <div class="buttonContainer">
+                    <button onclick="homePlus(1)">+1</button>
+                    <button onclick="homePlus(2)">+2</button>
+                    <button onclick="homePlus(3)">+3</button>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="guestContainer">
+
+                <h2>GUEST</h2>
+
+                <div id="scoreGuestContainer" class="scoreContainer">
+                    <p id="guestScore">00</p>
+                </div>
+
+                <div class="buttonContainer">
+                    <button onclick="guestPlus(1)">+1</button>
+                    <button onclick="guestPlus(2)">+2</button>
+                    <button onclick="guestPlus(3)">+3</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button onclick="newGame()"> NEW GAME </button>
+
+    </div>
+
+    <script src="./assets/index.js"></script>
+
+</body>
+
+</html>
